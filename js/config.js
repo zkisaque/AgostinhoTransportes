@@ -20,7 +20,7 @@ const SITE_CONFIG = {
 
   // Logo oficial: coloque o arquivo em assets/logo/ e ajuste o nome aqui.
   // Enquanto o arquivo não existir, o site mostra o nome da empresa em texto.
-  logo: "assets/logo/logo.png",
+  logo: "assets/logo/agostinho.svg",
 
   // Imagens (troque os arquivos provisórios .svg por fotos reais .jpg/.webp)
   imagens: {

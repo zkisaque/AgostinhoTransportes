@@ -25,7 +25,7 @@ const SITE_CONFIG = {
   // Imagens (troque os arquivos provisórios .svg por fotos reais .jpg/.webp)
   imagens: {
     hero:  { src: "assets/images/hero-caminhao.svg", alt: "Caminhão da Agostinho Transportes" },          // SUBSTITUIR: foto real do caminhão
-    sobre: { src: "assets/images/sobre-equipe.svg",  alt: "Equipe e caminhão da Agostinho Transportes" }  // SUBSTITUIR: foto real
+    sobre: { src: "assets/images/foto-restaurada.png", alt: "Agostinho e sua família, parte da história da empresa" }  // SUBSTITUIR: foto real
   },
 
   hero: {

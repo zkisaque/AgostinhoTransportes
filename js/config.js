@@ -31,7 +31,6 @@ const SITE_CONFIG = {
   hero: {
     titulo: "Sua mudança, com o cuidado de quem conhece a estrada.",
     slogan: "Levando qualidade, trazendo fidelidade.",
-    texto: "Transporte, embalagem e carregamento com compromisso e atenção a cada pertence.",
     botao: "Falar pelo WhatsApp"
   },
 

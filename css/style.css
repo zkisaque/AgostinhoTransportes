@@ -1,6 +1,7 @@
 /* Paleta: somente azul, azul-escuro e branco (e tons deles) */
 :root{
-  --azul-escuro:#06173a; --azul-medio:#0d2a63; --azul:#1558f0; --azul-claro:#e6eeff; --branco:#fff;
+  --azul-escuro:#061f3b; --azul-medio:#07518a; --azul:#0173ba; --azul-claro:#e6f2f8; --branco:#fff;
+  --azul-logo:#0173ba; --azul-logo-claro:#4aa5d6; --cinza-logo:#55565a; --cinza-claro:#eef0f2;
   --fonte:"Bahnschrift","Segoe UI Variable","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
   --largura:1120px;
 }

@@ -9,14 +9,14 @@ const SITE_CONFIG = {
     descricaoSite: "Agostinho Transportes: mudanças, embalagem, carregamento e transporte de itens nas regiões Sul e Sudeste do Brasil."
   },
 
-  // PREENCHER: número com DDI + DDD + número, só dígitos. Ex.: "5511999999999"
+  // Número com DDI + DDD + número, só dígitos.
   whatsapp: {
-    numero: "PREENCHER_NUMERO_WHATSAPP",
+    numero: "5511951390596",
     mensagem: "Olá! Conheci a Agostinho Transportes pelo site e gostaria de solicitar informações."
   },
 
-  // PREENCHER: telefone para ligações. Deixe exibir: "" para esconder.
-  telefone: { exibir: "PREENCHER (DDD) 0000-0000", numero: "PREENCHER_SO_DIGITOS" },
+  // Telefone para ligações.
+  telefone: { exibir: "(11) 95139-0596", numero: "5511951390596" },
 
   // Logo oficial: coloque o arquivo em assets/logo/ e ajuste o nome aqui.
   // Enquanto o arquivo não existir, o site mostra o nome da empresa em texto.

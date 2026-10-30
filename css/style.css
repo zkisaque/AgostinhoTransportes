@@ -44,12 +44,12 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 .menu-btn{display:none;background:none;border:2px solid var(--branco);color:var(--branco);border-radius:8px;padding:.4rem .9rem;font:inherit;font-weight:700;cursor:pointer}
 
 /* Início */
-.hero{position:relative;background:var(--azul-escuro);color:var(--branco);padding:8.5rem 0 5.5rem;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-10%;top:-30%;width:70%;height:160%;background:var(--azul);transform:skewX(-14deg);opacity:.9}
-.hero-grade{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero{position:relative;isolation:isolate;min-height:590px;display:flex;align-items:center;background:var(--azul-escuro);color:var(--branco);padding:9rem 0 7rem;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,31,59,1) 0%,rgba(6,31,59,.97) 28%,rgba(6,31,59,.78) 48%,rgba(6,31,59,.3) 76%,rgba(6,31,59,.18) 100%),url("../assets/images/banner-caminhao.jpeg") right center/cover no-repeat;opacity:.96}
+.hero-grade{position:relative;width:100%;display:grid;grid-template-columns:minmax(0,1fr);align-items:center}
+.hero-texto{max-width:650px}
 .hero-texto p{font-size:1.2rem;max-width:44ch;margin:1.5rem 0 2rem;opacity:.92}
 .hero-texto .hero-slogan{font-size:clamp(1.55rem,2.4vw,1.9rem);font-weight:800;line-height:1.2;letter-spacing:.005em;max-width:28ch;margin:1.5rem 0 2rem;padding-left:1rem;border-left:4px solid var(--branco);opacity:1}
-.hero-foto img{width:100%;height:auto;border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.4);aspect-ratio:3/2;object-fit:cover}
 /* Faixa de estrada: movimento contínuo, rápido e sem reinício perceptível */
 .estrada{position:absolute;left:0;right:0;bottom:1.6rem;height:4px;background-image:repeating-linear-gradient(90deg,var(--branco) 0 38px,transparent 38px 70px);background-size:140px 4px;background-repeat:repeat-x;opacity:.55;animation:estrada 10s linear infinite}
 @keyframes estrada{from{background-position:0 0}to{background-position:-140px 0}}

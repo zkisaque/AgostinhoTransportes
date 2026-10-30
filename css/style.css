@@ -46,8 +46,8 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 /* Início */
 .hero{position:relative;isolation:isolate;min-height:590px;display:flex;align-items:center;background:var(--azul-escuro);color:var(--branco);padding:9rem 0 7rem;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,31,59,1) 0%,rgba(6,31,59,.97) 28%,rgba(6,31,59,.78) 48%,rgba(6,31,59,.3) 76%,rgba(6,31,59,.18) 100%),url("../assets/images/banner-caminhao.jpeg") right center/cover no-repeat;opacity:.96}
-.hero-grade{position:relative;width:100%;display:grid;grid-template-columns:minmax(0,1fr);align-items:center}
-.hero-texto{max-width:650px}
+.hero-grade{position:relative;width:100%;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero-texto{max-width:100%}
 .hero-texto p{font-size:1.2rem;max-width:44ch;margin:1.5rem 0 2rem;opacity:.92}
 .hero-texto .hero-slogan{font-size:clamp(1.55rem,2.4vw,1.9rem);font-weight:800;line-height:1.2;letter-spacing:.005em;max-width:28ch;margin:1.5rem 0 2rem;padding-left:1rem;border-left:4px solid var(--branco);opacity:1}
 /* Faixa de estrada: movimento contínuo, rápido e sem reinício perceptível */
@@ -105,7 +105,8 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 
 /* Responsivo */
 @media (max-width:860px){
-  .hero-grade,.sobre-grade{grid-template-columns:1fr}\n  .regioes{grid-template-columns:1fr}
+  .hero-grade,.sobre-grade{grid-template-columns:1fr}
+  .regioes{grid-template-columns:1fr}
   .diferenciais{grid-template-columns:1fr 1fr}
   .servico{grid-template-columns:1fr;gap:.4rem}
   .hero{padding-top:7rem}

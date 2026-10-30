@@ -1,7 +1,6 @@
 /* Paleta: somente azul, azul-escuro e branco (e tons deles) */
 :root{
-  --azul-escuro:#061f3b; --azul-medio:#07518a; --azul:#0173ba; --azul-claro:#e6f2f8; --branco:#fff;
-  --azul-logo:#0173ba; --azul-logo-claro:#4aa5d6; --cinza-logo:#55565a; --cinza-claro:#eef0f2;
+  --azul-escuro:#06173a; --azul-medio:#0d2a63; --azul:#1558f0; --azul-claro:#e6eeff; --branco:#fff;
   --fonte:"Bahnschrift","Segoe UI Variable","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
   --largura:1120px;
 }
@@ -33,8 +32,7 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 .site-header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
 .site-header.rolou{background:var(--azul-escuro);box-shadow:0 2px 20px rgba(0,0,0,.25)}
 .barra{display:flex;align-items:center;justify-content:space-between;min-height:72px}
-.brand{display:flex;align-items:center;justify-content:center;background:var(--branco);padding:5px 10px;border-radius:10px;min-height:54px;max-width:270px;flex:0 1 auto;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.12)}
-.brand-logo{display:block;height:44px;width:auto;max-width:100%;object-fit:contain}
+.brand{color:var(--branco);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}
 #menu{display:flex;align-items:center;gap:1.6rem}
 #menu a:not(.btn){color:var(--branco);text-decoration:none;font-weight:600;font-size:.98rem;opacity:.9}
 #menu a:not(.btn):hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
@@ -111,5 +109,5 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
   #menu.aberto{display:flex}
   .site-header:has(#menu.aberto){background:var(--azul-escuro)}
 }
-@media (max-width:520px){.diferenciais{grid-template-columns:1fr}.brand{min-height:44px;padding:4px 7px;border-radius:8px;max-width:205px}.brand-logo{height:34px}}
+@media (max-width:520px){.diferenciais{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -1,0 +1,112 @@
+/* Paleta: somente azul, azul-escuro e branco (e tons deles) */
+:root{
+  --azul-escuro:#06173a; --azul-medio:#0d2a63; --azul:#1558f0; --azul-claro:#e6eeff; --branco:#fff;
+  --fonte:"Bahnschrift","Segoe UI Variable","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  --largura:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--fonte);color:var(--azul-escuro);background:var(--branco);line-height:1.6;font-size:1.0625rem}
+img{max-width:100%;display:block}
+.container{width:min(100% - 2.5rem,var(--largura));margin-inline:auto}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.pular{position:absolute;left:-999px;top:0;background:var(--branco);padding:.5rem 1rem;z-index:100}
+.pular:focus{left:0}
+
+h1,h2,h3{line-height:1.05;letter-spacing:-.02em;margin:0}
+h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:800}
+h2{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:800;margin-bottom:.75rem}
+h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
+.intro{max-width:56ch;font-size:1.15rem;margin:0 0 2.5rem;opacity:.85}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--azul);color:var(--branco);padding:.95rem 1.6rem;border-radius:999px;font:inherit;font-weight:700;text-decoration:none;border:2px solid var(--azul);transition:transform .2s,background .2s,box-shadow .2s}
+.btn svg{width:1.4rem;height:1.4rem}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(21,88,240,.35)}
+.btn-sm{padding:.5rem 1.1rem;font-size:.95rem}
+.btn-claro{background:var(--branco);color:var(--azul-escuro);border-color:var(--branco)}
+.btn-claro:hover{box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn-link{color:var(--branco);font-weight:700;text-underline-offset:5px}
+
+/* Cabeçalho */
+.site-header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.site-header.rolou{background:var(--azul-escuro);box-shadow:0 2px 20px rgba(0,0,0,.25)}
+.barra{display:flex;align-items:center;justify-content:space-between;min-height:72px}
+.brand{color:var(--branco);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}
+.brand-logo{height:44px;width:auto}
+#menu{display:flex;align-items:center;gap:1.6rem}
+#menu a:not(.btn){color:var(--branco);text-decoration:none;font-weight:600;font-size:.98rem;opacity:.9}
+#menu a:not(.btn):hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.menu-btn{display:none;background:none;border:2px solid var(--branco);color:var(--branco);border-radius:8px;padding:.4rem .9rem;font:inherit;font-weight:700;cursor:pointer}
+
+/* Início */
+.hero{position:relative;background:var(--azul-escuro);color:var(--branco);padding:8.5rem 0 5.5rem;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-10%;top:-30%;width:70%;height:160%;background:var(--azul);transform:skewX(-14deg);opacity:.9}
+.hero-grade{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero-texto p{font-size:1.2rem;max-width:44ch;margin:1.5rem 0 2rem;opacity:.92}
+.hero-foto img{width:100%;height:auto;border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.4);aspect-ratio:3/2;object-fit:cover}
+/* Faixa de estrada: linha tracejada que "corre" uma vez ao carregar */
+.estrada{position:absolute;left:0;right:0;bottom:1.6rem;height:4px;background:repeating-linear-gradient(90deg,var(--branco) 0 38px,transparent 38px 70px);opacity:.55;animation:estrada 2.4s ease-out both}
+@keyframes estrada{from{transform:translateX(-45%);opacity:0}to{transform:none;opacity:.55}}
+
+/* Seções */
+.secao{padding:clamp(4.5rem,9vw,7.5rem) 0}
+.escura{background:var(--azul-escuro);color:var(--branco)}
+.suave{background:var(--azul-claro)}
+
+/* Serviços: lista editorial, sem cartões */
+.servicos{list-style:none;margin:0;padding:0;border-top:2px solid var(--azul-escuro)}
+.servico{display:grid;grid-template-columns:1fr 1.2fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid rgba(6,23,58,.25);transition:padding-left .25s,color .25s}
+.servico h3{font-size:clamp(1.3rem,2.4vw,1.8rem)}
+.servico p{margin:0}
+.servico:hover{padding-left:1rem;color:var(--azul)}
+
+/* Sobre */
+.sobre-grade{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.sobre-foto img{width:100%;aspect-ratio:7/8;object-fit:cover;border-radius:6px;border-left:8px solid var(--azul)}
+.texto-sobre{max-width:60ch}
+.texto-sobre p{margin:0 0 1.1rem;opacity:.92}
+.destaque-anos{font-weight:800;font-size:1.4rem;color:var(--branco)}
+
+/* Atendimento */
+.regioes{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.regiao{background:var(--azul-escuro);color:var(--branco);padding:2rem;border-radius:6px;border-top:6px solid var(--azul)}
+.regiao h3{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:1rem}
+.estados{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.estados li{border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:.25rem .9rem;font-size:.95rem}
+.aviso{margin:1.5rem 0 0;font-weight:600}
+
+/* Diferenciais */
+.diferenciais{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.diferencial{border-left:4px solid var(--azul);padding-left:1.1rem}
+.diferencial h3{margin-bottom:.6rem}
+.diferencial p{margin:0;font-size:1rem}
+
+/* Contato */
+.contato{background:var(--azul);color:var(--branco);text-align:center}
+.contato .intro{margin-inline:auto}
+.acoes{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;align-items:center}
+.rodape{background:var(--azul-escuro);color:var(--branco);padding:1.5rem 0;font-size:.9rem;text-align:center}
+
+/* WhatsApp flutuante */
+.wa-flutuante{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--azul);color:var(--branco);display:grid;place-items:center;border:3px solid var(--branco);box-shadow:0 8px 24px rgba(6,23,58,.45);transition:transform .2s}
+.wa-flutuante:hover{transform:scale(1.08)}
+.wa-flutuante svg{width:30px;height:30px}
+
+/* Entrada dos blocos (só se JS e movimento permitidos) */
+.anima .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.anima .reveal.visivel{opacity:1;transform:none}
+
+/* Responsivo */
+@media (max-width:860px){
+  .hero-grade,.sobre-grade,.regioes{grid-template-columns:1fr}
+  .diferenciais{grid-template-columns:1fr 1fr}
+  .servico{grid-template-columns:1fr;gap:.4rem}
+  .hero{padding-top:7rem}
+  .menu-btn{display:block}
+  #menu{display:none;position:absolute;top:72px;left:0;right:0;background:var(--azul-escuro);flex-direction:column;align-items:flex-start;padding:1.2rem 1.5rem 1.6rem}
+  #menu.aberto{display:flex}
+  .site-header:has(#menu.aberto){background:var(--azul-escuro)}
+}
+@media (max-width:520px){.diferenciais{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

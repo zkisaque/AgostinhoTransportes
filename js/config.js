@@ -1,0 +1,87 @@
+/* ==========================================================
+   CONFIGURAÇÃO DO SITE — Agostinho Transportes
+   Edite SOMENTE este arquivo para trocar número, textos,
+   logo, imagens e contatos. Procure por "PREENCHER".
+   ========================================================== */
+const SITE_CONFIG = {
+  empresa: {
+    nome: "Agostinho Transportes",
+    descricaoSite: "Agostinho Transportes: mudanças, embalagem, carregamento e transporte de itens nas regiões Sul e Sudeste do Brasil."
+  },
+
+  // PREENCHER: número com DDI + DDD + número, só dígitos. Ex.: "5511999999999"
+  whatsapp: {
+    numero: "PREENCHER_NUMERO_WHATSAPP",
+    mensagem: "Olá! Conheci a Agostinho Transportes pelo site e gostaria de solicitar informações."
+  },
+
+  // PREENCHER: telefone para ligações. Deixe exibir: "" para esconder.
+  telefone: { exibir: "PREENCHER (DDD) 0000-0000", numero: "PREENCHER_SO_DIGITOS" },
+
+  // Logo oficial: coloque o arquivo em assets/logo/ e ajuste o nome aqui.
+  // Enquanto o arquivo não existir, o site mostra o nome da empresa em texto.
+  logo: "assets/logo/logo.png",
+
+  // Imagens (troque os arquivos provisórios .svg por fotos reais .jpg/.webp)
+  imagens: {
+    hero:  { src: "assets/images/hero-caminhao.svg", alt: "Caminhão da Agostinho Transportes" },          // SUBSTITUIR: foto real do caminhão
+    sobre: { src: "assets/images/sobre-equipe.svg",  alt: "Equipe e caminhão da Agostinho Transportes" }  // SUBSTITUIR: foto real
+  },
+
+  hero: {
+    titulo: "Sua mudança, com o cuidado de quem conhece a estrada.",
+    texto: "Transporte, embalagem e carregamento com compromisso e atenção a cada pertence.",
+    botao: "Falar pelo WhatsApp"
+  },
+
+  servicos: {
+    titulo: "Serviços",
+    intro: "Cuidamos de cada etapa para que você só precise se preocupar com o novo endereço.",
+    lista: [
+      { nome: "Mudanças", texto: "Transportamos a sua mudança com planejamento e cuidado, do ponto de partida até o destino." },
+      { nome: "Embalagem e proteção de pertences", texto: "Embalamos e protegemos móveis e objetos para que cheguem ao destino do jeito que saíram." },
+      { nome: "Carregamento e descarregamento", texto: "Organizamos a carga no caminhão e fazemos o descarregamento com atenção e responsabilidade." },
+      { nome: "Transporte de itens", texto: "Transporte de itens de acordo com a sua necessidade, com o mesmo cuidado de uma mudança completa." },
+      { nome: "Pré e pós-mudança", texto: "Apoio nas etapas antes e depois do transporte, para deixar todo o processo mais tranquilo." }
+    ]
+  },
+
+  sobre: {
+    titulo: "Uma história de família, na estrada.",
+    paragrafos: [
+      "A Agostinho Transportes foi fundada por Nilson Sérgio, que sempre teve afinidade com o setor de transportes.",
+      "O nome é uma homenagem ao pai de Nilson Sérgio, Agostinho, mantendo viva uma história familiar que hoje se reflete no jeito de trabalhar: com respeito, responsabilidade e proximidade com o cliente."
+    ],
+    // PREENCHER quando confirmado (ex.: "Mais de 10 anos de atuação"). Vazio = não aparece.
+    anosDeAtuacao: ""
+  },
+
+  atendimento: {
+    titulo: "Onde atendemos",
+    intro: "Atendemos as regiões Sul e Sudeste do Brasil.",
+    mostrarEstados: true, // false = mostra só os nomes das regiões
+    aviso: "Consulte a disponibilidade para a sua cidade pelo WhatsApp.", // "" para esconder
+    regioes: [
+      { nome: "Sul",     estados: ["Paraná", "Santa Catarina", "Rio Grande do Sul"] },
+      { nome: "Sudeste", estados: ["São Paulo", "Rio de Janeiro", "Minas Gerais", "Espírito Santo"] }
+    ]
+  },
+
+  diferenciais: {
+    titulo: "O que você encontra com a gente",
+    lista: [
+      { nome: "Confiança", texto: "Transparência e respeito em cada conversa e em cada entrega." },
+      { nome: "Cuidado com os pertences", texto: "Cada item é tratado com atenção, do carregamento à chegada." },
+      { nome: "Compromisso", texto: "O combinado é levado a sério, do planejamento à entrega." },
+      { nome: "Qualidade no atendimento", texto: "Atendimento direto, claro e próximo, do primeiro contato ao fim da mudança." }
+    ]
+  },
+
+  contato: {
+    titulo: "Vamos conversar sobre a sua mudança?",
+    texto: "O atendimento é feito principalmente pelo WhatsApp. Também recebemos ligações.",
+    botao: "Chamar no WhatsApp"
+  },
+
+  rodape: "Todos os direitos reservados."
+};

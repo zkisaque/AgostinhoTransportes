@@ -33,7 +33,7 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 .site-header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
 .site-header.rolou{background:var(--azul-escuro);box-shadow:0 2px 20px rgba(0,0,0,.25)}
 .barra{display:flex;align-items:center;justify-content:space-between;min-height:72px}
-.brand{color:var(--branco);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}
+.brand{display:flex;align-items:center;color:var(--branco);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}.brand-logo{display:block;width:clamp(170px,19vw,245px);height:auto;max-height:48px;object-fit:contain;object-position:left center}
 #menu{display:flex;align-items:center;gap:1.6rem}
 #menu a:not(.btn){color:var(--branco);text-decoration:none;font-weight:600;font-size:.98rem;opacity:.9}
 #menu a:not(.btn):hover{opacity:1;text-decoration:underline;text-underline-offset:6px}

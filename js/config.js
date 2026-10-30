@@ -64,9 +64,9 @@ const SITE_CONFIG = {
     mostrarEstados: true, // false = mostra só os nomes das regiões
     aviso: "Consulte a disponibilidade para a sua cidade pelo WhatsApp.", // "" para esconder
     regioes: [
-      { nome: "Sul",     estados: ["Paraná", "Santa Catarina", "Rio Grande do Sul"] },
-      { nome: "Sudeste", estados: ["São Paulo", "Minas Gerais", "Espírito Santo"] },
-      { nome: "Centro-Oeste", estados: ["Goiás"] }
+      { nome: "Sul", estados: ["Paraná", "Santa Catarina", "Rio Grande do Sul"] },
+      { nome: "Centro-Oeste", estados: ["Goiás"] },
+      { nome: "Sudeste", estados: ["São Paulo", "Minas Gerais", "Espírito Santo"] }
     ]
   },
 

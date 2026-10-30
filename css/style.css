@@ -36,7 +36,11 @@ h3{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
 .brand{display:flex;align-items:center;color:var(--branco);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}.brand-logo{display:block;width:clamp(170px,19vw,245px);height:auto;max-height:48px;object-fit:contain;object-position:left center;transform:translateY(3px)}
 #menu{display:flex;align-items:center;gap:1.6rem}
 #menu a:not(.btn){color:var(--branco);text-decoration:none;font-weight:600;font-size:.98rem;opacity:.9}
-#menu a:not(.btn):hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+#menu a:not(.btn){position:relative}
+#menu a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--branco);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+#menu a:not(.btn):hover{opacity:1}
+#menu a:not(.btn):hover::after,#menu a.nav-link.ativo::after{transform:scaleX(1)}
+#menu a.nav-link.ativo{opacity:1}
 .menu-btn{display:none;background:none;border:2px solid var(--branco);color:var(--branco);border-radius:8px;padding:.4rem .9rem;font:inherit;font-weight:700;cursor:pointer}
 
 /* Início */

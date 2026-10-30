@@ -24,10 +24,12 @@
   $('meta[name="description"]').content = C.empresa.descricaoSite;
 
   // ---- Logo (com reserva em texto) ----
-  var logo = new Image();
-  logo.alt = C.empresa.nome; logo.className = "brand-logo";
-  logo.onload = function () { var b = $(".brand"); b.textContent = ""; b.appendChild(logo); };
-  logo.src = C.logo;
+  if (C.logo) {
+    var logo = new Image();
+    logo.alt = C.empresa.nome; logo.className = "brand-logo";
+    logo.onload = function () { var b = $(".brand"); b.textContent = ""; b.appendChild(logo); };
+    logo.src = C.logo;
+  }
 
   // ---- Listas ----
   var sv = $("#lista-servicos");

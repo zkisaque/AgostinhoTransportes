@@ -49,9 +49,11 @@ const SITE_CONFIG = {
   sobre: {
     titulo: "Uma história de família, na estrada.",
     paragrafos: [
-      "A Agostinho Transportes foi fundada por Nilson Sérgio, que sempre teve afinidade com o setor de transportes.",
-      "O nome é uma homenagem ao pai de Nilson Sérgio, Agostinho, mantendo viva uma história familiar que hoje se reflete no jeito de trabalhar: com respeito, responsabilidade e proximidade com o cliente."
+      "A Agostinho Transportes foi fundada por Nilson Sérgio, que sempre teve afinidade com o setor de transportes e transformou esse interesse em um trabalho construído com dedicação e compromisso.",
+      "O nome da empresa carrega uma história ainda maior. Agostinho, pai de Sérgio, foi um homem trabalhador, honesto e dedicado à sua família. Mestre de obras de profissão, construiu sua trajetória com esforço e princípios que permaneceram como exemplo para aqueles que conviveram com ele.",
+      "A escolha desse nome é uma forma de homenagear sua memória e manter vivos os valores que ele representava. Assim, a Agostinho Transportes carrega não apenas o nome de uma pessoa especial, mas também um legado familiar que inspira sua trajetória."
     ],
+    fraseDestaque: "Mais do que transportar mudanças, a empresa busca levar consigo aquilo que deu origem à sua história: trabalho, honestidade, respeito e compromisso.",
     // PREENCHER quando confirmado (ex.: "Mais de 10 anos de atuação"). Vazio = não aparece.
     anosDeAtuacao: ""
   },

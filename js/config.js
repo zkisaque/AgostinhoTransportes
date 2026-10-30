@@ -6,7 +6,7 @@
 const SITE_CONFIG = {
   empresa: {
     nome: "Agostinho Transportes",
-    descricaoSite: "Agostinho Transportes: mudanças, embalagem, carregamento e transporte de itens nas regiões Sul e Sudeste do Brasil."
+    descricaoSite: "Agostinho Transportes: mudanças, embalagem, carregamento e transporte de itens nas regiões Sul, Sudeste e Centro-Oeste do Brasil."
   },
 
   // Número com DDI + DDD + número, só dígitos.
@@ -60,12 +60,13 @@ const SITE_CONFIG = {
 
   atendimento: {
     titulo: "Onde atendemos",
-    intro: "Atendemos as regiões Sul e Sudeste do Brasil.",
+    intro: "Atendemos as regiões Sul, Sudeste e Centro-Oeste do Brasil.",
     mostrarEstados: true, // false = mostra só os nomes das regiões
     aviso: "Consulte a disponibilidade para a sua cidade pelo WhatsApp.", // "" para esconder
     regioes: [
       { nome: "Sul",     estados: ["Paraná", "Santa Catarina", "Rio Grande do Sul"] },
-      { nome: "Sudeste", estados: ["São Paulo", "Rio de Janeiro", "Minas Gerais", "Espírito Santo"] }
+      { nome: "Sudeste", estados: ["São Paulo", "Minas Gerais", "Espírito Santo"] },
+      { nome: "Centro-Oeste", estados: ["Goiás"] }
     ]
   },
 

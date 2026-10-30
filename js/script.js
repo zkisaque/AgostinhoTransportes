@@ -89,17 +89,17 @@
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   // ---- Indicador da seção atual no menu ----
-  var linksMenu = $("#menu .nav-link");
+  var linksMenu = $$("#menu .nav-link");
   var secoesMenu = linksMenu.map(function (a) { return $(a.getAttribute("href")); }).filter(Boolean);
   function atualizarLinkAtivo() {
     var limite = Math.min(window.innerHeight * 0.38, 300);
-    var atual = secoesMenu[0];
+    var atual = null;
     secoesMenu.forEach(function (secao) {
       if (secao.getBoundingClientRect().top <= limite) atual = secao;
     });
     linksMenu.forEach(function (a) {
-      var ativo = a.getAttribute("href") === "#" + atual.id;
-      a.classList.toggle("ativo", ativo);
+      var ativo = atual && a.getAttribute("href") === "#" + atual.id;
+      a.classList.toggle("ativo", !!ativo);
       if (ativo) a.setAttribute("aria-current", "location");
       else a.removeAttribute("aria-current");
     });

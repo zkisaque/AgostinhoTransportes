@@ -40,6 +40,7 @@
 
   var sb = $("#texto-sobre");
   C.sobre.paragrafos.forEach(function (p) { sb.appendChild(el("p", "", p)); });
+  if (C.sobre.fraseDestaque) sb.appendChild(el("p", "destaque-legado", C.sobre.fraseDestaque));
   if (C.sobre.anosDeAtuacao) sb.appendChild(el("p", "destaque-anos", C.sobre.anosDeAtuacao));
 
   var rg = $("#lista-regioes");
